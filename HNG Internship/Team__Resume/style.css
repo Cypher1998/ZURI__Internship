@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #f7f3e3 30%,#f7f3c3 70%, #f7f3e3);
+    font: 1rem/ 2 tahoma;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: grid;
+    grid-row-gap: 2rem;
+    padding-bottom: 3rem;
+    color: #030338;;
+}
+
+ul {
+    margin-left: 3rem;
+}
+
+h2 {
+    font-family: cursive;
+    margin-bottom: 0.5rem;
+    color: #030338;
+    border-bottom: 3px solid;
+    border-color: #030338;
+}
+
+h3 {
+    font-family: monospace;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.main-header {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background: #030338;
+    color: gold;
+}
+
+.main-header .sub-header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.my-name h1 {
+    font: 2rem cursive;
+    font-weight: bold;
+}
+
+.my-name p {
+    font: 1rem monospace;
+    font-weight: bold;
+    color: chartreuse;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 90px;
+}
+
+.container-grid {
+    display: grid;
+    grid-row-gap: 2rem
+}
+
+.section-4 h3 {
+    margin-bottom: 0.5rem;
+    white-space: pre-line;
+}
+
+.section-4 .exp-2 {
+    margin-top: 1rem;
+}
+
+.section-5 p {
+    white-space: pre-line;
+}
+
+@media (min-width: 40rem) {
+    .main-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .main-header p {
+        font-size: 1.15rem;
+    }
+    .container {
+        width: 100%;
+    }
+
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-gap: 2rem;
+    }
+
+    .section-1 {
+        grid-column: 2 / 2;
+    }
+
+    .section-2 {
+        grid-row: 1;
+    }
+
+    .section-3 {
+        grid-column: 1 / 3;
+    }
+
+    .section-4 {
+        grid-column: 1 / 3;
+    }
+}
